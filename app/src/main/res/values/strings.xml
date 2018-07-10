@@ -116,4 +116,6 @@
     <string name="title_activity_hero_detail">HeroDetailActivity</string>
     <string name="search_hint">What a hero truly needs?</string>
 
+    <string name="copyright">© 2018 Valve Corporation, all rights reserved. Dota and the Dota logo are trademarks and/or registered trademarks of Valve Corporation.</string>
+
 </resources>

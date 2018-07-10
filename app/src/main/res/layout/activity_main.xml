@@ -71,10 +71,20 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/gradient_background"
             android:contentDescription="TODO"
             android:scaleType="center"
             app:srcCompat="@drawable/logo_dota2" />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="TODO"
+            android:text="@string/copyright"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -124,6 +134,7 @@
             android:layout_marginTop="13dp"
             android:background="@android:color/background_light"
             android:hint="@string/search_hint"
+            android:inputType="text"
             android:lines="1"
             android:maxLines="1"
             android:minLines="1"
