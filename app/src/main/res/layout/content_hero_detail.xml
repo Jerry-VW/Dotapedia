@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HeroDetailActivity"
+    tools:showIn="@layout/activity_hero_detail">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detailHeroName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/test_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/detailHeroIconImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/he_nevermore_full"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/detailHeroCategory"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/test_price"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/detailHeroBiography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:text="@string/test_description"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

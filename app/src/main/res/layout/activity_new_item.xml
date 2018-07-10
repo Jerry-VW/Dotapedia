@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="89dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/newSaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/newIconImage"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_notifications_black_24dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <EditText
+                android:id="@+id/newNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:text="NAME"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/newPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorAccent"
+                android:text="PRICE"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/newAttributesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="ATTRIBUTES"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="167dp" />
+
+        <EditText
+            android:id="@+id/newEffectsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="EFFECTS"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <EditText
+            android:id="@+id/newDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="DESCRIPTION"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newSaveButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
